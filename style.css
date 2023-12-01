@@ -6,7 +6,7 @@ nav a{
 
 nav a :hover{
     color: azure;
-    background-color: blueviolet;
+    background-color: rgb(122, 226, 43);
     font-weight: bolder;
     font-style: unset;
 }
