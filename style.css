@@ -1,0 +1,50 @@
+nav a{
+    text-decoration: underline;
+    color: grey;
+    transition: 1s;
+}
+
+nav a :hover{
+    color: azure;
+    background-color: blueviolet;
+    font-weight: bolder;
+    font-style: unset;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
