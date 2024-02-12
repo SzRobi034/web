@@ -10,17 +10,6 @@ nav a :hover{
     font-weight: bolder;
     font-style: unset;
 }
-
-.kep1{
-    float: left;
-}
-
-.kep2{
-    float: right;
-}
-.kep3{
-    float: left;
-}
-.kep4{
-    float: left;
+.div{
+    
 }
