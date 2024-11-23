@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profilom</title>
+    <style>
+        body
+        
+        {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .light-theme {
+            background-color: #fff;
+            color: #333;
+        }
+        .dark-theme {
+            background-color: #333;
+            color: #fff;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+        }
+        .profile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        .profile-info {
+            max-width: 600px;
+        }
+        .profile-info h2 {
+            margin: 0;
+        }
+        .images {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .images img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin: 10px;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .social-links a {
+            margin: 0 10px;
+        }
+        .theme-toggle {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body class="light-theme">
+
+    <button class="theme-toggle" onclick="toggleTheme()">Sötét téma</button>
+
+    <div class="header">
+        <h1>Üdvözöllek a profilomon!</h1>
+    </div>
+
+    <div class="profile">
+        <img src="pf.JPG" alt="Profilkép">
+        <div class="profile-info">
+            <h2>Szili Robi</h2>
+            
+        <ul><p>Szia,Szili Robi vagyok!Becenevem:SZLI.</p>
+            <p><li>Én egy informatikai sulia járok és szoftver fejlesztőnek készülök.Szeretek weboldalakat dizájnolni.</li></p>    
+            <p><li>Sportok amiket űzök:Jégkorong és futás. Mindkettőböl nagyon jó vagyok és sok eredményt is értem el bennük.</li></p>
+            <p><li>Kedvenc szabadidős tevékenységeim:Fotózás,Videózás,Dj-zés</li></p>
+
+        <ul></ul></div>
+    </div>
+
+    <div class="images">
+        <img src="c2.JPG" alt="Kép 1">
+        <img src="mrc.JPG" alt="Kép 2">
+        <img src="plane.JPG" alt="Kép 3">
+        <img src="sea.JPG" alt="Kép 4">
+        <img src="sz.JPG" alt="Kép 5">
+        <img src="castle.JPG" alt="Kép 6">
+    </div>
+
+    <div class="social-links">
+        <a href="https://www.instagram.com/szili_robi/" target="_blank">
+            <img src="instagram-icon-1.png" alt="Instagram" style="width: 30px; height: 30px;">
+        </a>
+        <a href="https://www.facebook.com/Szili.Robi.2008" target="_blank">
+            <img src="Facebook_logo_(square).png" alt="Facebook" style="width: 30px; height: 30px;">
+        </a>
+    </div>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            const button = document.querySelector('.theme-toggle');
+            if (body.classList.contains('light-theme')) {
+                body.classList.remove('light-theme');
+                body.classList.add('dark-theme');
+                button.textContent = 'Világos téma';
+            } else {
+                body.classList.remove('dark-theme');
+                body.classList.add('light-theme');
+                button.textContent = 'Sötét téma';
+            }
+        }
+    </script>
+    
+</body>
+</html>
